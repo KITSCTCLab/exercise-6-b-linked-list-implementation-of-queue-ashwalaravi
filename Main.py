@@ -38,10 +38,9 @@ class Queue:
     while(currentnode):
       queue.append(currentnode.data)
       currentnode = currentnode.next
-   for i in queue:
-    print(i,end="=>")
-   print(None)
-
+    for i in queue:
+      print(i,end="=>")
+    print(None)
 
 # Do not change the following code
 queue = Queue()

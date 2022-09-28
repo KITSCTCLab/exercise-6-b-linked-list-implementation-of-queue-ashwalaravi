@@ -26,7 +26,7 @@ class Queue:
     if self.head is None:
       return None
     else:
-      new = self.head.data
+      val_returned  = self.head.data
       self.head = self.head.next 
       
 
@@ -34,11 +34,11 @@ class Queue:
   def status(self) -> None:
     # Write your code here
     currentnode = self.head
-    queue=[]
+    queu=[]
     while(currentnode):
-      queue.append(currentnode.data)
+      queu.append(currentnode.data)
       currentnode = currentnode.next
-    for i in queue:
+    for i in queu:
       print(i,end="=>")
     print(None)
 

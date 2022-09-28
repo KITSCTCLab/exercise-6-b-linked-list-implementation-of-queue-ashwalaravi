@@ -15,9 +15,9 @@ class Queue:
       self.head = Node(data)
       self.last = self.head
     else:
-      temp = self.last
-      temp.next = Node(data)
-      temp = temp.next 
+      
+      self.last.next = Node(data)
+      self.last = self.last.next 
       
     
 
@@ -33,9 +33,9 @@ class Queue:
     
   def status(self) -> None:
     # Write your code here
-    currentnode = self.head
+    currentnod = self.head
     queu=[]
-    while(currentnode):
+    while(currentnod):
       queu.append(currentnode.data)
       currentnode = currentnode.next
     for i in queu:

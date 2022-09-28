@@ -36,8 +36,8 @@ class Queue:
     currentnod = self.head
     queu=[]
     while(currentnod):
-      queu.append(currentnode.data)
-      currentnode = currentnode.next
+      queu.append(currentnod.data)
+      currentnod = currentnod.next
     for i in queu:
       print(i,end="=>")
     print(None)
